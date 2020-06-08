@@ -25,9 +25,9 @@ def apply_discount
   if @empolyee_discount
     take_off = @total * (1 - @empolyee_discount / 100)
     @total -= take_off
-    "After the discount, the total comes to #{total}"
+    return "After the discount, the total comes to #{total}"
   else
-   "Ther is no discount to apply"
+   return "Ther is no discount to apply"
   end
 end
 
