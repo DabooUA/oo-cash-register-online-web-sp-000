@@ -23,7 +23,7 @@ class CashRegister
     else
       @items << item
       end
-    @total += price*quantity
+    @total += price * quantity
     @last_transaction_amount = @total
     @total
   end
@@ -32,8 +32,8 @@ class CashRegister
     if @discount == 0
       "There is no discount to apply."
       else
-      self.total -= (0.01 * @discount * @total).to_i
-      #@total -= @total - (@total * @discount)
+      @discount = @discount / 100.to_f
+      @total =@total - (@total * @discount)
       "After the discount, the total comes to $#{@total}."
     end
 end
