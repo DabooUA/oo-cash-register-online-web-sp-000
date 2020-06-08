@@ -8,10 +8,6 @@ class CashRegister
     @items = []
   end
 
-  def discount
-    self.empolyee_discount
-  end
-
   def add_item(item, price, quantity = 1)
 
     @total_of_transaction = self.total += price * quantity
