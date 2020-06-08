@@ -23,9 +23,9 @@ class CashRegister
 
   def apply_discount
     if @empolyee_discount
-      take_off = @price * (1 - @empolyee_discount / 100)
+      take_off = @price.to_f * (1 - @empolyee_discount / 100)
       @total -= take_off
-      return "After the discount, the total comes to #{@total}."
+      return "After the discount, the total comes to #{@total.to_i}."
     else
       return "There is no discount to apply."
     end
