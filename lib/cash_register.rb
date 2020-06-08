@@ -6,6 +6,7 @@ class CashRegister
     @total = 0
     @empolyee_discount = empolyee_discount
     @items = []
+    @last_transaction_amount = []
   end
 
   def discount
