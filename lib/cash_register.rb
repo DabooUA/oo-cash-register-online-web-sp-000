@@ -19,7 +19,6 @@ class CashRegister
       items << item
 
       end
-
   end
 
   def apply_discount
