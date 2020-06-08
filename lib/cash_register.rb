@@ -1,1 +1,34 @@
+class CashRegister
 
+  attr_accessor :total, :empolyee_discount, :price, :items
+
+  def initialize (empolyee_discount = nil)
+    @total = 0.00
+    @empolyee_discount = empolyee_discount
+    @items = []
+  end
+
+  def discount
+    self.empolyee_discount
+  end
+
+  def add_item(item, price, quantity = 1)
+
+    self.total += price * quantity
+    quantity.times do
+      items << items
+      end
+
+  end
+
+def apply_discount
+  if @empolyee_discount
+    @total = @total * (1 - @empolyee_discount / 100)
+    "After the discount, the total comes to #{total}"
+  else
+   "Ther is no discount to apply"
+  end
+end
+
+
+end
