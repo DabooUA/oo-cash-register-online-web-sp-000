@@ -2,7 +2,7 @@ class CashRegister
 
   attr_accessor :total, :empolyee_discount, :price, :items, :last_transaction_amount
 
-  def initialize (empolyee_discount = nil)
+  def initialize (empolyee_discount = 0)
     @total = 0
     @empolyee_discount = empolyee_discount
     @items = []
