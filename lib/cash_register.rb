@@ -29,7 +29,7 @@ class CashRegister
       self.total_of_transaction = self.total_of_transaction * (1 - @discount / 100.to_f)
       #@total -= @total - (@total * @discount)
      return "After the discount, the total comes to $#{@total.to_i}."
-      
+
     end
 end
 
