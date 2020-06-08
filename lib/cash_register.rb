@@ -17,6 +17,7 @@ class CashRegister
     @total_of_transaction = self.total += price * quantity
     quantity.times do
       items << item
+
       end
 
   end
@@ -32,7 +33,7 @@ class CashRegister
 end
 
   def void_last_transaction
-    @total -= @total_of_transaction
+    @total -= @total_of_transaction.pop
   end
 
 end
