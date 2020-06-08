@@ -21,7 +21,7 @@ class CashRegister
     if @empolyee_discount > 0
       @empolyee_discount = @empolyee_discount / 100.to_f
       @total -= @total - (@total * @empolyee_discount)
-      return "After the discount, the total comes to #{@total.to_i}."
+      return "After the discount, the total comes to $#{@total.to_i}."
     else
       return "There is no discount to apply."
     end
