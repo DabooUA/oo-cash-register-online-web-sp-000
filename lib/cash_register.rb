@@ -1,6 +1,6 @@
 class CashRegister
 
-  attr_accessor :total, :empolyee_discount, :price, :items
+  attr_accessor :total, :empolyee_discount, :price, :items, :total_of_transaction
 
   def initialize (empolyee_discount = nil)
     @total = 0
@@ -14,7 +14,7 @@ class CashRegister
 
   def add_item(item, price, quantity = 1)
 
-    total_of_transaction = self.total += price * quantity
+    @total_of_transaction = self.total += price * quantity
     quantity.times do
       items << item
       end
