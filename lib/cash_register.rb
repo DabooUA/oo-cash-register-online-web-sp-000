@@ -27,7 +27,7 @@ class CashRegister
       @total -= take_off
       return "After the discount, the total comes to #{@total}"
     else
-      return "Ther is no discount to apply"
+      return "There is no discount to apply"
     end
 end
 
