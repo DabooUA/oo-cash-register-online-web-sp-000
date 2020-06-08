@@ -10,9 +10,7 @@ class CashRegister
     @last_transaction_amount = []
   end
 
-  def discount
-    self.empolyee_discount
-  end
+  
 
   def add_item(item, price, quantity = 1)
 
