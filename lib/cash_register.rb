@@ -25,9 +25,9 @@ class CashRegister
     if @empolyee_discount
       take_off = @price * (1 - @empolyee_discount / 100)
       @total -= take_off
-      return "After the discount, the total comes to #{@total}"
+      return "After the discount, the total comes to #{@total}."
     else
-      return "There is no discount to apply"
+      return "There is no discount to apply."
     end
 end
 
