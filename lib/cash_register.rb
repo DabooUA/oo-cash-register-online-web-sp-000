@@ -1,6 +1,7 @@
 class CashRegister
 
-  attr_accessor :total, :empolyee_discount, :price, :items, :total_of_transaction
+  attr_accessor :total, :empolyee_discount, :price, :items
+  attr_reader :total_of_transaction
 
   def initialize (empolyee_discount = 0)
     @total = 0
@@ -23,7 +24,7 @@ class CashRegister
 
   def apply_discount
     if @discount
-       @total = @total * (1 - @discount / 100.to_f)
+       @total_of_transaction = @total_of_transaction * (1 - @discount / 100.to_f)
        #@total -= @total - (@total * @discount)
       return "After the discount, the total comes to $#{@total.to_i}."
     else
