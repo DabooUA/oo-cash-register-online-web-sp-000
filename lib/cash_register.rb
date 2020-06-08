@@ -35,5 +35,4 @@ end
     @total -= @total_of_transaction
   end
 
-
 end
