@@ -1,11 +1,11 @@
 class CashRegister
 
   attr_accessor :price, :total, :items, :last_transaction_amount
-  attr_reader :empolyee_discount
+  attr_reader :discount
 
   def initialize (discount = 20)
     @total = 0
-    @empolyee_discount = empolyee_discount
+    @discount = discount
     @items = []
     @last_transaction_amount = []
   end
